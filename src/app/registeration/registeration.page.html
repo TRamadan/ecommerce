@@ -65,12 +65,12 @@
     <!-- here is the button of the login-->
     <ion-row>
       <div class="login-button-class">
-        <ion-button class="login-button" shape="round" color="danger">تسجيل الأن</ion-button>
+        <ion-button (click)="OnRegister()" class="login-button" shape="round" color="danger">تسجيل الأن</ion-button>
       </div>
     </ion-row>
 
     <!-- here is the button needed for the registeration-->
-    <div>
+    <div (click)="gotologin()">
       <h5 class="register-button">تسجيل دخول</h5>
     </div>
   </form>
