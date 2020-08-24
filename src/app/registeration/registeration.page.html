@@ -1,9 +1,78 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registeration</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <!-- here is the logo of the application-->
+  <ion-grid>
+    <ion-row class="row">
+      <img src="../../assets//icon/logo.png">
+    </ion-row>
 
-<ion-content>
+    <ion-row>
+      <!-- here is the title of the screen-->
+      <div>
+        <h1>
+          تسجيل جديد
+        </h1>
+      </div>
+    </ion-row>
+  </ion-grid>
+
+  <!-- here is the input fields for the login-->
+  <form class="form">
+    <ion-row>
+      <div class="phone-passwordlabel">
+        الإسم
+      </div>
+      <ion-item color="light" class="mobile-item" lines="none">
+        <ion-input placeholder="الإسم" class="input-class" type="text"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <div class="phone-passwordlabel">
+        رقم الجوال
+      </div>
+      <ion-item color="light" class="mobile-item" lines="none">
+        <ion-input placeholder="رقم الهاتف" class="input-class" type="number"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <div class="phone-passwordlabel">
+        العنوان
+      </div>
+      <ion-item color="light" class="mobile-item" lines="none">
+        <ion-input placeholder="العنوان" class="input-class" type="text"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <div class="phone-passwordlabel">
+        كلمة المرور
+      </div>
+      <ion-item color="light" class="password-item" lines="none">
+        <ion-input placeholder="كلمة المرور" class="input-class" type="password"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <div class="phone-passwordlabel">
+        تأكيد كلمة المرور
+      </div>
+      <ion-item color="light" class="password-item" lines="none">
+        <ion-input placeholder="تأكيد كلمة المرور" class="input-class" type="password"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <!-- here is the button of the login-->
+    <ion-row>
+      <div class="login-button-class">
+        <ion-button class="login-button" shape="round" color="danger">تسجيل الأن</ion-button>
+      </div>
+    </ion-row>
+
+    <!-- here is the button needed for the registeration-->
+    <div>
+      <h5 class="register-button">تسجيل دخول</h5>
+    </div>
+  </form>
 
 </ion-content>
