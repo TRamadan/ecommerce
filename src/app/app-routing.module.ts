@@ -20,24 +20,29 @@ const routes: Routes = [
   },
   {
     path: 'menu',
-    loadChildren: () => import('../../menu/menu.module').then( m => m.MenuPageModule)
+    loadChildren: () => import('../app/menu/menu.module').then(m => m.MenuPageModule)
   },
   {
     path: 'profile',
-    loadChildren: () => import('../../profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () => import('../app/profile/profile.module').then(m => m.ProfilePageModule)
   },
   {
     path: 'cart',
-    loadChildren: () => import('../../cart/cart.module').then( m => m.CartPageModule)
+    loadChildren: () => import('../app/cart/cart.module').then(m => m.CartPageModule)
   },
   {
     path: 'search',
-    loadChildren: () => import('../../search/search.module').then( m => m.SearchPageModule)
+    loadChildren: () => import('../app/search/search.module').then(m => m.SearchPageModule)
   },
   {
     path: 'productdetails',
-    loadChildren: () => import('../../productdetails/productdetails.module').then( m => m.ProductdetailsPageModule)
-  }
+    loadChildren: () => import('../app/productdetails/productdetails.module').then(m => m.ProductdetailsPageModule)
+  },
+  {
+    path: 'categories',
+    loadChildren: () => import('../app/categories/categories.module').then(m => m.CategoriesPageModule)
+  },
+
 ];
 @NgModule({
   imports: [
