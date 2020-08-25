@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TouchSequence } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuPage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
 
+  gotofavoraits() {
+    this.router.navigateByUrl("/favoraits");
+  }
+
+  gotocontactus() {
+    this.router.navigateByUrl("/contactus")
+  }
+
+  gotoprivacy() {
+    this.router.navigateByUrl("/privacy")
+  }
+
+  gotoaboutus() {
+    this.router.navigateByUrl("/aboutus")
+  }
 }

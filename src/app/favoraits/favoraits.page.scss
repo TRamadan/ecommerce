@@ -1,0 +1,48 @@
+.row{
+    direction: ltr;
+    margin-top: 10px;
+}
+.back-button{
+    margin-left:93%;
+}
+
+.h5{
+    margin-right: 11px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+ion-content{
+    --ion-background-color: #d3d3d340;
+    ion-list{
+        --ion-background-color: #f4f4f4;
+    }
+    ion-item{
+        --ion-background-color: #f4f4f4;
+    }
+}
+
+.fav-img{
+    border-radius: 50%;
+    width: 30%;
+}
+
+.label-class{
+    margin-right: 29px;
+}
+
+h3{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.fav-icon
+{
+    margin-top: 10px;
+}

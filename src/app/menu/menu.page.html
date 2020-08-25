@@ -4,41 +4,21 @@
   </div>
   <ion-grid>
     <ion-row class="row-menu">
-      <ion-col size="6">
+      <ion-col size="6" (click)="gotoaboutus()">
         <div>
           <img src="../../assets/icon/about.png">
         </div>
         <div>
-          <h5 class="h5-1">نشميشيه</h5>
+          <h5 class="h5-1">حول التطبيق</h5>
         </div>
       </ion-col>
 
-      <ion-col size="6">
+      <ion-col size="6" (click)="gotoprivacy()">
         <div>
           <img src="../../assets/icon/terms.png">
         </div>
         <div>
-          <h5 class="h5-1">نشميشيه</h5>
-        </div>
-      </ion-col>
-    </ion-row>
-
-    <ion-row class="row-menu">
-      <ion-col size="6">
-        <div>
-          <img src="../../assets/icon/share.png">
-        </div>
-        <div>
-          <h5 class="h5-1">نشميشيه</h5>
-        </div>
-      </ion-col>
-
-      <ion-col size="6">
-        <div>
-          <img src="../../assets/icon/feather-heart.png">
-        </div>
-        <div>
-          <h5 class="h5-1">نشميشيه</h5>
+          <h5 class="h5-1">سياسة الخصوصية</h5>
         </div>
       </ion-col>
     </ion-row>
@@ -49,7 +29,7 @@
           <img src="../../assets/icon/shrot.png">
         </div>
         <div>
-          <h5 class="h5-1">نشميشيه</h5>
+          <h5 class="h5-1">الشروط و الأحكام</h5>
         </div>
       </ion-col>
 
@@ -58,7 +38,7 @@
           <img src="../../assets/icon/rate.png">
         </div>
         <div>
-          <h5 class="h5-1">نشميشيه</h5>
+          <h5 class="h5-1">قيم التطبيق</h5>
         </div>
       </ion-col>
     </ion-row>
@@ -66,10 +46,31 @@
     <ion-row class="row-menu">
       <ion-col size="6">
         <div>
+          <img src="../../assets/icon/share.png">
+        </div>
+        <div>
+          <h5 class="h5-1">شارك التطبيق</h5>
+        </div>
+      </ion-col>
+
+      <ion-col size="6" (click)="gotofavoraits()">
+        <div>
+          <img src="../../assets/icon/feather-heart.png">
+        </div>
+        <div>
+          <h5 class="h5-1">المفضلة</h5>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="row-menu">
+      <ion-col size="6">
+        <div>
           <img src="../../assets/icon/orders.png">
         </div>
         <div>
-          <h5 class="h5-1">نشميشيه</h5>
+          <h5 class="h5-1">طلباتي</h5>
         </div>
       </ion-col>
 
@@ -78,14 +79,14 @@
           <img src="../../assets/icon/profile.png">
         </div>
         <div>
-          <h5 class="h5-1">نشميشيه</h5>
+          <h5 class="h5-1">حسابي</h5>
         </div>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <div>
-        <ion-button fill="clear">x</ion-button>
+      <div class="close">
+        <img src="../../assets/icon/close.png" />
       </div>
     </ion-row>
   </ion-grid>

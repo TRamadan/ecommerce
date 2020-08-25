@@ -42,6 +42,22 @@ const routes: Routes = [
     path: 'categories',
     loadChildren: () => import('../app/categories/categories.module').then(m => m.CategoriesPageModule)
   },
+  {
+    path: 'aboutus',
+    loadChildren: () => import('../app/aboutus/aboutus.module').then(m => m.AboutusPageModule)
+  },
+  {
+    path: 'favoraits',
+    loadChildren: () => import('../app/favoraits/favoraits.module').then(m => m.FavoraitsPageModule)
+  },
+  {
+    path: 'privacy',
+    loadChildren: () => import('../app/privacy/privacy.module').then(m => m.PrivacyPageModule)
+  },
+  {
+    path: 'contactus',
+    loadChildren: () => import('../app/contactus/contactus.module').then(m => m.ContactusPageModule)
+  },
 
 ];
 @NgModule({
