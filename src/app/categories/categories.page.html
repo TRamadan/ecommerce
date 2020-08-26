@@ -1,9 +1,121 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>categories</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div style="direction : rtl; position: absolute;top:0; width: 100%;display: flex; justify-content: space-between;">
+    <div style="padding: 10px !important;" (click)="gotohome()">
+      <img class="img-header" src="../../assets/icon/back.png">
+    </div>
+    <div style="padding: 10px !important;" (click)="gotonotifications()">
+      <img class="img-header" src="../../assets/icon/notifications.png">
+    </div>
+  </div>
 
-<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div>
+        <h5 class="h5 h5-header">جميع الأقسام</h5>
+      </div>
+    </ion-row>
+    <ion-row class="row-menu">
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/sweet.png">
+        </div>
+        <div>
+          <h5 class="h5-1">لوازم العيد</h5>
+        </div>
+      </ion-col>
 
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/ramadan.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم زينة رمضان</h5>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-menu">
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/electricity.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم الأجهزة الكهربائية</h5>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/utensils.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم الأواني</h5>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-menu">
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/furniture.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم المفروشات</h5>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/esthlaky.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم الإستهلاكي</h5>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="row-menu">
+
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/games.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم الألعاب</h5>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/healthy.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم الصحة و الجمال</h5>
+        </div>
+      </ion-col>
+
+
+    </ion-row>
+
+    <ion-row class="row-menu">
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/chairs.png">
+        </div>
+        <div>
+          <h5 class="h5-1">الكراسي و لوازم الحدائق</h5>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div>
+          <img src="../../assets/icon/tissues.png">
+        </div>
+        <div>
+          <h5 class="h5-1">قسم المناديل</h5>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
