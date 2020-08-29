@@ -1,9 +1,150 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>cart</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="first-div-header">
+    <div class="second-div-header" (click)="gotohome()">
+      <img src="../../assets/icon/back.png">
+    </div>
+    <div class="notification-header" (click)="gotocart()">
+      <img src="../../assets/icon/notifications.png">
+    </div>
+  </div>
 
-<ion-content>
+  <div class="titile">
+    <h1>سلة الشراء</h1>
+  </div>
+
+  <!-- here is the content of the page-->
+  <ion-list color="light" style="direction: rtl; background-color: #f4f4f4;">
+    <ion-item color="light">
+      <img class="fav-img" src="../../assets/icon/product image.jpg">
+      <ion-label class="label-class">
+        <p>صناعة حلوة التشورو</p>
+        <h3>111 ر.س</h3>
+        <div class="product-description">
+          الكمية :
+          <img class="plus-circle" src="../../assets/icon/awesome-plus-circle.png" (click)="increasequantity()">
+          <p class="quantity"> {{quantity}} </p> <img class="minus-cicrle" (click)="decreasequantity()"
+            src="../../assets/icon/awesome-minus-circle.png">
+        </div>
+      </ion-label>
+    </ion-item>
+
+    <ion-item color="light">
+      <img class="fav-img" src="../../assets/icon/product image.jpg">
+      <ion-label class="label-class">
+        <p>صناعة حلوة التشورو</p>
+        <h3>111 ر.س</h3>
+        <div class="product-description">
+          الكمية :
+          <img class="plus-circle" src="../../assets/icon/awesome-plus-circle.png" (click)="increasequantity()">
+          <p class="quantity"> {{quantity}} </p> <img class="minus-cicrle" (click)="decreasequantity()"
+            src="../../assets/icon/awesome-minus-circle.png">
+        </div>
+      </ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <img class="fav-img" src="../../assets/icon/product image.jpg">
+      <ion-label class="label-class">
+        <p>صناعة حلوة التشورو</p>
+        <h3>111 ر.س</h3>
+        <div class="product-description">
+          الكمية :
+          <img class="plus-circle" src="../../assets/icon/awesome-plus-circle.png" (click)="increasequantity()">
+          <p class="quantity"> {{quantity}} </p> <img class="minus-cicrle" (click)="decreasequantity()"
+            src="../../assets/icon/awesome-minus-circle.png">
+        </div>
+      </ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <img class="fav-img" src="../../assets/icon/product image.jpg">
+      <ion-label class="label-class">
+        <p>صناعة حلوة التشورو</p>
+        <h3>111 ر.س</h3>
+        <div class="product-description">
+          الكمية :
+          <img class="plus-circle" src="../../assets/icon/awesome-plus-circle.png" (click)="increasequantity()">
+          <p class="quantity"> {{quantity}} </p> <img class="minus-cicrle" (click)="decreasequantity()"
+            src="../../assets/icon/awesome-minus-circle.png">
+        </div>
+      </ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <img class="fav-img" src="../../assets/icon/product image.jpg">
+      <ion-label class="label-class">
+        <p>صناعة حلوة التشورو</p>
+        <h3>111 ر.س</h3>
+        <div class="product-description">
+          الكمية :
+          <img class="plus-circle" src="../../assets/icon/awesome-plus-circle.png" (click)="increasequantity()">
+          <p class="quantity"> {{quantity}} </p> <img class="minus-cicrle" (click)="decreasequantity()"
+            src="../../assets/icon/awesome-minus-circle.png">
+        </div>
+      </ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <img class="fav-img" src="../../assets/icon/product image.jpg">
+      <ion-label class="label-class">
+        <p>صناعة حلوة التشورو</p>
+        <h3>111 ر.س</h3>
+        <div class="product-description">
+          الكمية :
+          <img class="plus-circle" src="../../assets/icon/awesome-plus-circle.png" (click)="increasequantity()">
+          <p class="quantity"> {{quantity}} </p> <img class="minus-cicrle" (click)="decreasequantity()"
+            src="../../assets/icon/awesome-minus-circle.png">
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div style='text-align: center;'>
+    <ion-button class="button-style" shape="round" color="danger" (click)="gotopaymentoptions()">متابعة</ion-button>
+  </div>
 
 </ion-content>
+
+<ion-footer>
+  <div class="footer-nav footer-footer">
+    <div class="inner-div">
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotohome()">
+          <img src="../../assets/icon/Home.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">الرئيسية</span>
+      </div>
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotoprofile()">
+          <img style="position:relative" src="../../assets/icon/Profile-1.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">حسابي</span>
+      </div>
+
+      <div class="pages-section">
+        <ion-button fill="clear">
+          <img style="position:relative" src="../../assets/icon/Cart.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">السلة</span>
+      </div>
+
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotosearch()">
+          <img src="../../assets/icon/Search.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">بحث</span>
+      </div>
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotomenu()">
+          <img src="../../assets/icon/More.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">القائمة</span>
+      </div>
+    </div>
+  </div>
+</ion-footer>

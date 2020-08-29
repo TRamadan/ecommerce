@@ -1,9 +1,93 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>notifications</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="first-div-header">
+    <div class="second-div-header" (click)="gotohome()">
+      <img src="../../assets/icon/back.png">
+    </div>
+    <div class="notification-header" (click)="gotocart()">
+      <img src="../../assets/icon/Cart-1.png">
+    </div>
+  </div>
 
-<ion-content>
+  <div class="titile">
+    <h1>الإشعارات</h1>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <div>
+        <img class="img" src="../../assets/icon/happy.png">
+      </div>
+
+      <div class="content-div">
+        <ion-row>
+          <h4 class="h5">
+            تم التسجيل بنجاح
+          </h4>
+        </ion-row>
+        <ion-row>
+          <p class="date-field">
+            10-10-2020
+          </p>
+        </ion-row>
+      </div>
+    </ion-row>
+
+    <ion-row>
+      <div>
+        <img class="img" src="../../assets/icon/order.png">
+      </div>
+
+      <div class="content-div">
+        <ion-row>
+          <h4 class="h5">
+            طلبك قيد المراجعة
+          </h4>
+        </ion-row>
+        <ion-row>
+          <p class="date-field">
+            10-10-2020
+          </p>
+        </ion-row>
+      </div>
+    </ion-row>
+
+    <ion-row>
+      <div>
+        <img class="img" src="../../assets/icon/happy.png">
+      </div>
+
+      <div class="content-div">
+        <ion-row>
+          <h4 class="h5">
+            تم الموافقة علي طلبك
+          </h4>
+        </ion-row>
+        <ion-row>
+          <p class="date-field">
+            10-10-2020
+          </p>
+        </ion-row>
+      </div>
+    </ion-row>
+
+    <ion-row>
+      <div>
+        <img class="img" src="../../assets/icon/unhappy.png">
+      </div>
+
+      <div class="content-div">
+        <ion-row>
+          <h4 class="h5">
+            تم رفض طلبك لعدم تحديد مكان محدد
+          </h4>
+        </ion-row>
+        <ion-row>
+          <p class="date-field">
+            10-10-2020
+          </p>
+        </ion-row>
+      </div>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

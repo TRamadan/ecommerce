@@ -1,0 +1,140 @@
+.img-class
+{
+    margin-right: 57px;
+    margin-left: 57px;
+}
+
+.first-div-header{
+    position: absolute;top:0; width: 100%;display: flex; justify-content: space-between;
+}
+
+.second-div-header{
+    padding: 10px !important;position: relative;
+}
+
+.notification-header{
+    padding: 10px !important;
+}
+
+.logo-header{
+    height:80px;
+}
+
+.logo-header-img{
+    padding-top:5px !important;height:85%;color:white;text-align:center;
+}
+
+.logo-img{
+    margin-top: -1% !important;
+      width: 56%;
+      height: 103%;
+}
+
+.caption-class{
+    text-align: center;
+}
+
+.title{
+    margin-right: 17px;
+    font-size: 37px;
+    font-weight: bolder;
+}
+
+.bottom-section
+{
+    background-color: linear-gradient(red, yellow);
+}
+
+.card-style{
+    margin-top: -10px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 135%;
+    height: 136px;
+}
+
+.img-section{
+    max-width: 83%;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+    margin-top: -15px;
+}
+
+.img-div{
+    height:40px;
+}
+
+.cart-img{
+    height: 20px;
+    width: 20px;
+    margin-right: 9px;
+    margin-top: 3px;
+}
+
+.row{
+    column-gap: 28px;
+}
+
+.footer {
+
+    .footer-nav {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;      
+      padding-top: 10px;
+      width: 108%;
+      position: relative;
+      left: -13px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-height: 100%;
+      }
+    } 
+
+  }
+
+  .footer-footer{
+    display:flex;
+    justify-content:around;
+    align-items:center;
+    flex-wrap: wrap;
+  }
+
+  .inner-div{
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+    display:flex;
+    justify-content:around;
+    align-items:center;
+    width:100%;
+    padding:3px 10px !important;
+    background-color: white;
+  }
+
+  .pages-section{
+    width: 20%;
+    font-size: 10px; 
+    text-align: center;
+  }
+
+  .page-title{
+      font-size: 12px;
+  }
+
+  .item-content{
+    margin-top: -17px;
+    margin-right: 6px;
+  }
+
+  .item-name{
+    font-size: 14px;
+    color:black;
+  }
+
+  .item-price{
+    font-weight: bold;
+    color:black;
+  }

@@ -1,0 +1,410 @@
+<ion-content [fullscreen]="true">
+  <div class="first-div-header">
+    <div class="second-div-header" (click)="gotocart()">
+      <img src="../../assets/icon/Cart-1.png">
+    </div>
+    <div class="notification-header" (click)="gotonotification()">
+      <img src="../../assets/icon/notifications.png">
+    </div>
+  </div>
+
+  <div class="logo-header">
+    <div class="logo-header-img">
+      <img src="../../assets/icon/logo.png" height="100px;" class="logo-img">
+    </div>
+  </div>
+
+  <!-- here is the section for categories-->
+  <div>
+    <h5 class="title">
+      الأقسام
+    </h5>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3">
+        <div>
+          <img src="../../assets/icon/apparel.png">
+        </div>
+        <div class="caption-class">
+          ملابس
+        </div>
+      </ion-col>
+
+      <ion-col size="3">
+        <div>
+          <img src="../../assets/icon/shoes.png">
+        </div>
+        <div class="caption-class">
+          أحذية
+        </div>
+      </ion-col>
+
+      <ion-col size="3">
+        <div>
+          <img src="../../assets/icon/beauty.png">
+        </div>
+        <div class="caption-class">
+          مكياج
+        </div>
+      </ion-col>
+
+      <ion-col size="3" (click)="gotocategories()">
+        <div>
+          <img src="../../assets/icon/see all.png">
+        </div>
+        <div class="caption-class">
+          الكل
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- here is the slider of the newest added-->
+  <div>
+    <h5 class="title">
+      المضاف حديثاً
+    </h5>
+  </div>
+  <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2
+    (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+    <ion-slide>
+      <div>
+        <img src="../../assets/icon/Banner 1.png">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <img src="../../assets/icon/Banner 1.png">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <img src="../../assets/icon/Banner 1.png">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <img src="../../assets/icon/Banner 1.png">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <img src="../../assets/icon/Banner 1.png">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <img src="../../assets/icon/Banner 1.png">
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <!-- here is the products section-->
+
+  <ion-grid>
+
+    <ion-row class="row">
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row">
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row">
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row">
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+      <ion-col size="3">
+        <ion-card class="card-style" (click)="showdetails()">
+          <div class="img-div">
+            <img class="cart-img" src="../../assets/icon/shopping-cart.png">
+          </div>
+          <div class="img-section">
+            <img src="../../assets/icon/product image.jpg" />
+          </div>
+
+          <div class="item-content">
+            <ion-card-subtitle class="item-name">
+              صانعة فشار مع وعاء
+            </ion-card-subtitle>
+            <ion-card-subtitle class="item-price">
+              11.00 ر.س
+            </ion-card-subtitle>
+          </div>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<!-- here is the tab bar-->
+<ion-footer>
+  <div class="footer-nav footer-footer">
+    <div class="inner-div">
+
+      <div class="pages-section">
+        <ion-button fill="clear">
+          <img src="../../assets/icon/Home.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">الرئيسية</span>
+      </div>
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotoprofile()">
+          <img style="position:relative" src="../../assets/icon/Profile-1.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">حسابي</span>
+      </div>
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotocart()">
+          <img style="position:relative" src="../../assets/icon/Cart.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">السلة</span>
+      </div>
+
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotosearch()">
+          <img src="../../assets/icon/Search.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">بحث</span>
+      </div>
+
+
+
+      <div class="pages-section">
+        <ion-button fill="clear" (click)="gotomenu()">
+          <img src="../../assets/icon/More.png" />
+        </ion-button>
+        <br>
+        <span class="page-title">القائمة</span>
+      </div>
+    </div>
+  </div>
+</ion-footer>

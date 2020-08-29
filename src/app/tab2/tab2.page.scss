@@ -1,0 +1,85 @@
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -4%;
+}
+
+h4{
+    font-weight: bold;
+    font-size: medium;
+}
+
+ion-content{
+        --ion-background-color: #d3d3d340;
+}
+
+h1{
+    font-size: 33px;
+    font-weight: 900;
+    margin-top: 16px;
+    margin-right:12px;
+}
+
+.register-button
+{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 10px;
+    color: gray;
+}
+
+.input-class
+{
+    border:1px solid lightgray; 
+    padding:10px !important; 
+    border-radius: 40px; 
+    margin-top: 20px !important; 
+    margin-bottom: 20px !important;
+}
+
+.mobile-item{
+    width:100%;
+}
+.password-item{
+    width:100%;
+}
+
+.phone-passwordlabel{
+    font-size: larger;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+.h5{
+    font-weight: bolder;
+    font-size:large;
+    margin-right: 42px;
+}
+
+.check-boxlabel{
+    margin-right: 21px;
+    font-weight: bolder;
+}
+
+.login-button{
+    height: 57px;
+    width: 174px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.login-button-class
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forgot-password{
+    margin-top:-20px;
+}

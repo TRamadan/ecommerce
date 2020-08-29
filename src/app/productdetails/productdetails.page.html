@@ -1,9 +1,144 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>productdetails</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="no-scroll">
+  <div class="first-div-header">
 
-<ion-content>
+    <div class="second-div-header" (click)="gotocart()">
+      <img src="../../assets/icon/Cart-1.png">
+    </div>
+    <div class="second-div-header" (click)="gotohome()">
+      <img src="../../assets/icon/back.png">
+    </div>
+  </div>
 
+  <div class="logo-header">
+    <div class="logo-header-img">
+      صانعة حلوة التشورو
+      <div class="badge-desc">
+        <ion-badge class="badge-style" color="danger" slot="end">4 متوفر</ion-badge>
+        <ion-badge class="price-badge" slot="end">11.00 ر.س</ion-badge>
+      </div>
+    </div>
+  </div>
+
+  <ion-slides pager="true" loop="false">
+    <ion-slide>
+      <img src="../../assets/icon/product image.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/icon/product image.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/icon/product image.jpg">
+    </ion-slide>
+  </ion-slides>
+
+  <!-- here is the segment -->
+  <ion-segment value="favorite" mode="ios" [(ngModel)]="status">
+    <ion-segment-button value="product">
+      <ion-label class="label">المنتج</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="description">
+      <ion-label class="label">الوصف </ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="comment">
+      <ion-label class="label">التعليقات</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="details-content" [ngSwitch]="status">
+    <!-- here is the div if the user click on on of segments-->
+    <div *ngSwitchCase="'product'">
+      <div>
+        <p class="product-description">الماركة : هوم ماستر</p>
+      </div>
+      <hr class="hr">
+      <div>
+        <p class="product-description">
+          750W
+        </p>
+      </div>
+      <hr class="hr">
+      <div class="product-description">
+        الكمية :
+        <img class="plus-circle" src="../../assets/icon/awesome-plus-circle.png" (click)="increasequantity()">
+        <p class="quantity"> {{quantity}} </p> <img class="minus-cicrle" (click)="decreasequantity()"
+          src="../../assets/icon/awesome-minus-circle.png">
+      </div>
+    </div>
+    <div *ngSwitchCase="'description'">
+      <p class="par">
+        هذا نص تجريبي يتم تغييره من لوحة التحكم فيما بعد يعد هذا النص هذا نص تجريبي يتم تغييره من لوحة التحكم فيما بعد
+        يعد
+        هذا النص
+        هذا نص تجريبي يتم تغييره من لوحة التحكم فيما بعد يعد هذا النص
+        هذا نص تجريبي يتم تغييره من لوحة التحكم فيما بعد يعد هذا النص
+        هذا نص تجريبي يتم تغييره من لوحة التحكم فيما بعد يعد هذا النص
+        هذا نص تجريبي يتم تغييره من لوحة التحكم فيما بعد يعد هذا النص
+        هذا نص تجريبي يتم تغييره من لوحة التحكم فيما بعد يعد هذا النص
+      </p>
+    </div>
+    <div *ngSwitchCase="'comment'">
+      <ion-list lines="none">
+        <div>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="../../assets/icon/user.png">
+            </ion-avatar>
+            <ion-label>
+              <h2 style="color:red; font-size:17px; font-weight:bold;">علي علي</h2>
+              <h3> رائع جداً تامنتج و فعال جداً</h3>
+              <p style="color:lightgray">10-10-2020</p>
+            </ion-label>
+          </ion-item>
+        </div>
+
+        <div>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="../../assets/icon/user.png">
+            </ion-avatar>
+            <ion-label>
+              <h2 style="color:red; font-size:17px; font-weight:bold;">علي علي</h2>
+              <h3> رائع جداً تامنتج و فعال جداً</h3>
+              <p style="color:lightgray">10-10-2020</p>
+            </ion-label>
+          </ion-item>
+        </div>
+
+        <div>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="../../assets/icon/user.png">
+            </ion-avatar>
+            <ion-label>
+              <h2 style="color:red; font-size:17px; font-weight:bold;">علي علي</h2>
+              <h3> رائع جداً تامنتج و فعال جداً</h3>
+              <p style="color:lightgray">10-10-2020</p>
+            </ion-label>
+          </ion-item>
+        </div>
+      </ion-list>
+    </div>
+  </div>
 </ion-content>
+<ion-footer>
+  <ion-row class="footer-row">
+    <ion-col size="2">
+      <div (click)="share()">
+        <img src="../../assets/icon/awesome-share-alt.png">
+      </div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="button-div">
+        <ion-button shape="round" color="danger" class="button-style" (click)="addtocart()">
+          <img class="button-img" src="../../assets/icon/cart_w.png">أضف للسلة</ion-button>
+      </div>
+    </ion-col>
+
+    <ion-col size="2">
+      <div (click)="addtofav()">
+        <img src="../../assets/icon/awesome-heart.png">
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-footer>

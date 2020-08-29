@@ -29,4 +29,16 @@ export class MenuPage implements OnInit {
   gotoaboutus() {
     this.router.navigateByUrl("/aboutus")
   }
+
+  gotohome() {
+    this.router.navigateByUrl("/home")
+  }
+
+  gotoprofile() {
+    this.router.navigateByUrl("/profile")
+  }
+
+  goto_orders() {
+  }
+
 }

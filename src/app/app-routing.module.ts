@@ -2,12 +2,9 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
-    path: 'login',
     loadChildren: () => import('../app/login/login.module').then(m => m.LoginPageModule)
   },
   {
@@ -57,6 +54,26 @@ const routes: Routes = [
   {
     path: 'contactus',
     loadChildren: () => import('../app/contactus/contactus.module').then(m => m.ContactusPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('../app/home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'forgotpassword',
+    loadChildren: () => import('../app/forgotpassword/forgotpassword.module').then(m => m.ForgotpasswordPageModule)
+  },
+  {
+    path: 'paymentoptions',
+    loadChildren: () => import('../app/paymentoptions/paymentoptions.module').then(m => m.PaymentoptionsPageModule)
+  },
+  {
+    path: 'visapayment',
+    loadChildren: () => import('../app/visapayment/visapayment.module').then(m => m.VisapaymentPageModule)
+  },
+  {
+    path: 'confirmationmodal',
+    loadChildren: () => import('../app/confirmationmodal/confirmationmodal.module').then(m => m.ConfirmationmodalPageModule)
   },
 
 ];

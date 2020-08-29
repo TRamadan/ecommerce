@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true">
+  <div class="first-div-header">
+    <div class="second-div-header" (click)="gotohome()">
+      <img src="../../assets/icon/back.png">
+    </div>
+    <div class="notification-header" (click)="gotonotification()">
+      <img src="../../assets/icon/notifications.png">
+    </div>
+  </div>
+
+  <div class="titile">
+    <h1>الدفع بالفيزا</h1>
+  </div>
+
+  <!-- here is the form for payment-->
+  <form>
+    <ion-row>
+      <div class="phone-passwordlabel">
+        رقم البطاقة
+      </div>
+      <ion-item color="light" class="mobile-item" lines="none">
+        <ion-input placeholder="0000 0000 0000 0000" class="input-class" type="number"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col size="6">
+        <div class="phone-passwordlabel">
+        </div>
+        <ion-item color="light" class="mobile-item" lines="none">
+          <ion-input placeholder="22" class="input-class" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="6">
+        <div class="phone-passwordlabel">
+        </div>
+        <ion-item color="light" class="mobile-item" lines="none">
+          <ion-input placeholder="MM" class="input-class" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <div class="phone-passwordlabel">
+        CVV
+      </div>
+      <ion-item color="light" class="mobile-item" lines="none">
+        <ion-input placeholder="CVV" class="input-class" type="number"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <div class="button-div">
+      <ion-button class="button-style" shape="round" color="danger" (click)="paynow()">دفع الأن</ion-button>
+    </div>
+  </form>
+
+</ion-content>

@@ -44,7 +44,7 @@
       </ion-col>
 
       <ion-col size="6">
-        <div>
+        <div (click)="gotoforgotpassword()">
           <h5 class="h5">
             نسيت كلمة المرور
           </h5>
@@ -55,13 +55,13 @@
     <!-- here is the button of the login-->
     <ion-row>
       <div class="login-button-class">
-        <ion-button class="login-button" shape="round" color="danger">تسجيل الدخول</ion-button>
+        <ion-button class="login-button" shape="round" color="danger" (click)="login()">تسجيل الدخول</ion-button>
       </div>
     </ion-row>
 
     <!-- here is the button needed for the registeration-->
     <div>
-      <h5 class="register-button">تسجيل جديد</h5>
+      <h5 class="register-button" (click)="gotoregister()">تسجيل جديد</h5>
     </div>
   </form>
 

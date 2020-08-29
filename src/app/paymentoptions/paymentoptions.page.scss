@@ -1,0 +1,48 @@
+.first-div-header{
+    position: absolute;top:0; width: 100%;display: flex; justify-content: space-between;
+}
+
+.second-div-header{
+    padding: 10px !important;position: relative;
+}
+
+.notification-header{
+    padding: 10px !important;
+}
+
+.titile{
+    margin-top: 74px;
+    margin-right: 14px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.item-class
+{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.img-thumbnail
+{
+    width:75px;
+}
+
+ion-content{
+    --ion-background-color: #d3d3d340;
+  
+    ion-item{
+        --ion-background-color: #ffffff;
+    }
+}
+
+.payment-option
+{
+    margin-right: 12px;
+    font-size: 21px;
+}

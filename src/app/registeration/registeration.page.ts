@@ -14,12 +14,12 @@ export class RegisterationPage implements OnInit {
   }
 
   gotologin() {
-    this.router.navigateByUrl("/login")
+    this.router.navigateByUrl("/")
   }
 
   OnRegister() {
     this.DoneRegisteration();
-    this.router.navigateByUrl("/");
+    this.router.navigateByUrl("/home");
   }
 
   async DoneRegisteration() {
@@ -30,6 +30,7 @@ export class RegisterationPage implements OnInit {
     });
     await alert.present();
   }
+
 
 
 
