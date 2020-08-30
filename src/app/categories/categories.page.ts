@@ -14,7 +14,7 @@ export class CategoriesPage implements OnInit {
   }
 
   gotohome() {
-    this.router.navigateByUrl("/")
+    this.router.navigateByUrl("/home")
   }
 
   gotonotifications() {

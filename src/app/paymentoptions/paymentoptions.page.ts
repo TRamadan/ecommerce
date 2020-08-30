@@ -25,4 +25,8 @@ export class PaymentoptionsPage implements OnInit {
     this.router.navigateByUrl("/visapayment")
   }
 
+  madapay() {
+    console.log("this function is fired")
+  }
+
 }

@@ -39,6 +39,7 @@ export class MenuPage implements OnInit {
   }
 
   goto_orders() {
+    this.router.navigateByUrl("/orders")
   }
 
 }

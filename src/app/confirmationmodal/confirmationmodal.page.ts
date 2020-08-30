@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-confirmationmodal',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfirmationmodalPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalctrl: ModalController) { }
 
   ngOnInit() {
+  }
+
+  close() {
+    this.modalctrl.dismiss();
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { ModalController } from '@ionic/angular';
+import { ConfirmationmodalPage } from "../confirmationmodal/confirmationmodal.page";
 @Component({
   selector: 'app-visapayment',
   templateUrl: './visapayment.page.html',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class VisapaymentPage implements OnInit {
 
-  constructor(public router: Router) { }
+  constructor(private router: Router, private modalcontroller: ModalController) { }
 
   ngOnInit() {
   }
@@ -22,7 +23,15 @@ export class VisapaymentPage implements OnInit {
   }
 
   paynow() {
-    console.log("this function is fired")
+    console.log("this function is fired");
+    this.openmodal();
+  }
+
+  //here is the function needed to open the modal 
+  async openmodal() {
+    this.modalcontroller.create({ component: ConfirmationmodalPage }).then(modalelement => {
+      modalelement.present();
+    })
   }
 
 }

@@ -1,0 +1,61 @@
+<ion-content>
+  <div class="first-div-header">
+    <div class="second-div-header" (click)="gotohome()">
+      <img src="../../assets/icon/back.png">
+    </div>
+    <div class="notification-header" (click)="gotonotification()">
+      <img src="../../assets/icon/notifications.png">
+    </div>
+  </div>
+
+  <form class="form">
+    <ion-row>
+      <div class="phone-passwordlabel">
+        قسيمة الخصم
+      </div>
+      <ion-item color="light" class="mobile-item" lines="none">
+        <ion-input placeholder="كود كوبو الخصم" class="input-class" type="number"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <div class="phone-passwordlabel">
+        حساب تكلفة الشحن
+      </div>
+      <ion-item color="light" class="password-item" lines="none">
+        <ion-input placeholder="الدولة" class="input-class" type="password"></ion-input>
+      </ion-item>
+      <ion-item color="light" class="password-item" lines="none">
+        <ion-input placeholder="المنطقة" class="input-class" type="password"></ion-input>
+      </ion-item>
+      <ion-item color="light" class="password-item" lines="none">
+        <ion-input placeholder="المدينة" class="input-class" type="password"></ion-input>
+      </ion-item>
+      <ion-item color="light" class="password-item" lines="none">
+        <ion-input placeholder="الرمز البريدي" class="input-class" type="password"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <div class="main-div">
+      <div>
+        <h2 class="total">
+          الإجمالي
+        </h2>
+      </div>
+      <div>
+        <h3 class="total-price">
+          830 ر.س
+        </h3>
+      </div>
+
+    </div>
+
+    <!-- here is the button of the login-->
+    <ion-row>
+      <div class="login-button-class">
+        <ion-button class="login-button" shape="round" color="danger" (click)="gotopaymentoptions()">التقدم لإتمام الطلب
+        </ion-button>
+      </div>
+    </ion-row>
+  </form>
+</ion-content>

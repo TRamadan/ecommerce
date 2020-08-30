@@ -1,3 +1,21 @@
-<ion-content [fullscreen] = "true">
+<ion-content [fullscreen]="true">
+  <div (click)="close()">
+    <ion-icon class="icon" name="close-outline"></ion-icon>
+  </div>
+
+
+  <div class="top-div">
+    <div>
+      <img class="img-style" src="../../assets/icon/done.png">
+    </div>
+
+    <div>
+      <h3 class="done">طلبك مكتمل</h3>
+    </div>
+
+    <div>
+      <h4 class="par">تم إستكمال طلبك بنجاح يمكنك المتابعة و إنتظار إشعار منا</h4>
+    </div>
+  </div>
 
 </ion-content>

@@ -1,0 +1,71 @@
+
+.first-div-header{
+    position: absolute;top:0; width: 100%;display: flex; justify-content: space-between;
+}
+
+.second-div-header{
+    padding: 10px !important;position: relative;
+}
+
+.notification-header{
+    padding: 10px !important;
+}
+
+.input-class
+{
+    border:1px solid lightgray; 
+    padding:10px !important; 
+    border-radius: 40px; 
+    margin-top: 20px !important; 
+    margin-bottom: 20px !important;
+    background-color:white;
+}
+
+.mobile-item{
+    width:100%;
+}
+.password-item{
+    width:100%;
+}
+
+.phone-passwordlabel{
+    font-size: larger;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.form{
+    margin-top: 80px;
+}
+
+ion-content{
+    --ion-background-color: #d3d3d340;
+}
+
+.total-price{
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.total{
+    color: red;
+    font-size: 25px;
+}
+
+.login-button{
+    height: 57px;
+    width: 174px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.main-div{
+    text-align:center;
+}
+
+.login-button-class
+{
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -75,6 +75,14 @@ const routes: Routes = [
     path: 'confirmationmodal',
     loadChildren: () => import('../app/confirmationmodal/confirmationmodal.module').then(m => m.ConfirmationmodalPageModule)
   },
+  {
+    path: 'confirmrequest',
+    loadChildren: () => import('../app/confirmrequest/confirmrequest.module').then(m => m.ConfirmrequestPageModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('../app/orders/orders.module').then(m => m.OrdersPageModule)
+  },
 
 ];
 @NgModule({

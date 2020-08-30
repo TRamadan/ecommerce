@@ -42,5 +42,9 @@ export class CartPage implements OnInit {
     this.router.navigateByUrl("/paymentoptions")
   }
 
+  gotoconfirm() {
+    this.router.navigateByUrl("/confirmrequest")
+  }
+
 
 }
