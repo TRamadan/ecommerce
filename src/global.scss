@@ -26,13 +26,21 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
-    left: 0;
+  left: 0;
     width: 100%;
-    top:20px;
-    bottom:inherit;
+    top: 27px;
+    bottom: inherit;
   }
 
   .swiper-pagination-bullet-active {
     background: var(--bullet-background-active);
     background: lightslategray;
+}
+
+.swiper-slide img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-top: 10px;
 }

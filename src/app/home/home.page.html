@@ -2,15 +2,18 @@
   <div class="first-div-header">
     <div class="second-div-header" (click)="gotocart()">
       <img src="../../assets/icon/Cart-1.png">
+      <ion-badge id="notifications-badge" color="danger">6</ion-badge>
+
     </div>
-    <div class="notification-header" (click)="gotonotification()">
+    <div id="notification-button" class="notification-header" (click)="gotonotification()">
       <img src="../../assets/icon/notifications.png">
+      <ion-badge id="notifications-badge" color="danger">6</ion-badge>
     </div>
   </div>
 
   <div class="logo-header">
     <div class="logo-header-img">
-      <img src="../../assets/icon/logo.png" height="100px;" class="logo-img">
+      <img src="../../assets/icon/homelogo.png" height="100px;" class="logo-img">
     </div>
   </div>
 
@@ -362,7 +365,6 @@
 <ion-footer>
   <div class="footer-nav footer-footer">
     <div class="inner-div">
-
       <div class="pages-section">
         <ion-button fill="clear">
           <img src="../../assets/icon/Home.png" />

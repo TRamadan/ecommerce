@@ -1,8 +1,10 @@
 <ion-content [fullscreen]="true" class="no-scroll">
   <div class="first-div-header">
 
-    <div class="second-div-header" (click)="gotocart()">
+    <div id="notification-button" class="second-div-header" (click)="gotocart()">
       <img src="../../assets/icon/Cart-1.png">
+      <ion-badge id="notifications-badge" color="danger">6</ion-badge>
+
     </div>
     <div class="second-div-header" (click)="gotohome()">
       <img src="../../assets/icon/back.png">

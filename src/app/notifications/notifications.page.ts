@@ -14,7 +14,7 @@ export class NotificationsPage implements OnInit {
   }
 
   gotohome() {
-    this.router.navigateByUrl("/")
+    this.router.navigateByUrl("/home")
   }
 
   gotocart() {

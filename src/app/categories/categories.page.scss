@@ -1,3 +1,7 @@
+*{
+    direction: rtl;
+}
+
 ion-content{
     --ion-background-color:#d3d3d340;
 }
@@ -32,7 +36,7 @@ ion-grid{
 {
     color:#000; 
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .close{
@@ -42,5 +46,23 @@ ion-grid{
 }
 
 img{
-    width : 60%;
+    width : 45%;
+}
+
+#notification-button {            
+    position: relative;
+    width: 50px;
+    top: 1px;
+    right: 1px;
+    overflow: visible !important;
+  }
+
+
+#notifications-badge {
+    background-color: red;
+    position: absolute;
+    top: 25px;
+    right: -3px;
+    border-radius: 50%;
+    margin-right: 30px;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-orders',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdersPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  gotohome() {
+    this.router.navigateByUrl("/home")
+  }
+
+  gotocart() {
+    this.router.navigateByUrl("/cart")
+  }
+
+  gotonotifications() {
+    this.router.navigateByUrl("/notifications")
   }
 
 }

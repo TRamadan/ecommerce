@@ -1,3 +1,7 @@
+*{
+    direction: rtl;
+}
+
 .img-class
 {
     margin-right: 57px;
@@ -212,6 +216,7 @@ ion-content{
     height: 47px;
     font-size: 20px;
     font-weight: bolder;
+    direction: ltr;
 }
 
 .label{
@@ -249,4 +254,22 @@ ion-content{
 
 .minus-cicrle{
     height: 20px;
+}
+
+#notification-button {            
+    position: relative;
+    width: 50px;
+    top: 1px;
+    right: 1px;
+    overflow: visible !important;
+  }
+
+
+#notifications-badge {
+    background-color: red;
+    position: absolute;
+    top: 28px;
+    right: -7px;
+    border-radius: 50%;
+    margin-right: 30px;
 }

@@ -18,7 +18,7 @@ export class PrivacyPage implements OnInit {
   }
 
   gotohome() {
-    this.router.navigateByUrl("/")
+    this.router.navigateByUrl("/home")
   }
 
 }

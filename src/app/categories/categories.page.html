@@ -3,8 +3,9 @@
     <div style="padding: 10px !important;" (click)="gotohome()">
       <img class="img-header" src="../../assets/icon/back.png">
     </div>
-    <div style="padding: 10px !important;" (click)="gotonotifications()">
+    <div id="notification-button" style="padding: 10px !important;" (click)="gotonotifications()">
       <img class="img-header" src="../../assets/icon/notifications.png">
+      <ion-badge id="notifications-badge" color="danger">6</ion-badge>
     </div>
   </div>
 

@@ -18,7 +18,7 @@ export class AboutusPage implements OnInit {
   }
 
   gotohome() {
-    this.router.navigateByUrl("/")
+    this.router.navigateByUrl("/home")
   }
 
 }

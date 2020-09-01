@@ -1,3 +1,7 @@
+*{
+    direction: rtl;
+}
+
 .first-div-header{
     position: absolute;top:0; width: 100%;display: flex; justify-content: space-between;
 }
@@ -45,4 +49,22 @@ ion-content{
 {
     margin-right: 12px;
     font-size: 21px;
+}
+
+#notification-button {            
+    position: relative;
+    width: 50px;
+    top: 1px;
+    right: 1px;
+    overflow: visible !important;
+  }
+
+
+#notifications-badge {
+    background-color: red;
+    position: absolute;
+    top: 25px;
+    right: -3px;
+    border-radius: 50%;
+    margin-right: 30px;
 }

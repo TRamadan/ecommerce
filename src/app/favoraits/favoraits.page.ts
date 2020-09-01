@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-favoraits',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoraitsPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  gotonotifications() {
+    this.router.navigateByUrl("/notifications");
+  }
+
+  gotohome() {
+    this.router.navigateByUrl("/home")
+  }
+
+  gotocart() {
+    this.router.navigateByUrl("/cart")
   }
 
 }

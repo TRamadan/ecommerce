@@ -45,6 +45,9 @@ export class CartPage implements OnInit {
   gotoconfirm() {
     this.router.navigateByUrl("/confirmrequest")
   }
+  gotonotifications() {
+    this.router.navigateByUrl("/notifications")
+  }
 
 
 }
