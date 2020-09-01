@@ -49,5 +49,9 @@ export class CartPage implements OnInit {
     this.router.navigateByUrl("/notifications")
   }
 
+  remove() {
+    console.log("this function is fired")
+  }
+
 
 }
