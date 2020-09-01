@@ -25,4 +25,8 @@ export class OrdersPage implements OnInit {
     this.router.navigateByUrl("/notifications")
   }
 
+  remove() {
+    console.log("this function is fired")
+  }
+
 }
