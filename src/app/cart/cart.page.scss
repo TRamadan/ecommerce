@@ -144,15 +144,23 @@ ion-content{
   }
 
 
-#notifications-badge {
-    background-color: red;
-    position: absolute;
-    top: 25px;
-    right: -3px;
-    border-radius: 50%;
-    margin-right: 30px;
-}
-
 .trash-icon{
     height:25px;
+}
+
+.notification-span
+{
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    width: 18px;
+    position: absolute;
+    left: 6px;
+    top: 30px;
+}
+
+.notification-number{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
 }

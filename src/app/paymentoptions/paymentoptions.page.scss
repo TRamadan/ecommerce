@@ -68,3 +68,19 @@ ion-content{
     border-radius: 50%;
     margin-right: 30px;
 }
+
+.cart-span
+{    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    width: 18px;
+    position: absolute;
+    left: 7px;
+    top: 30px;
+}
+
+.notification-number{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}

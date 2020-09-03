@@ -2,15 +2,22 @@
   <ion-grid>
     <ion-row class="row">
       <ion-col size="2">
-        <div id="notification-button" class="notification-img" (click)="gotonotifications()">
-          <img src="../../assets/icon/notifications.png">
-          <ion-badge id="notifications-badge" color="danger">6</ion-badge>
+        <div  class="notification-img" (click)="gotonotifications()">
+          <img style="width: 20px; margin-right: 6px;" src="../../assets/icon/notifications.png">
+          <div class="notification-span">
+            <span class="notification-number">5</span>
+           </div>
         </div>
+
       </ion-col>
       <ion-col size="2">
-        <div id="notification-button" class="cart-img" (click)=" gotocart()">
-          <img src="../../assets/icon/Cart.png">
-          <ion-badge id="notifications-cart-badge" color="danger">6</ion-badge>
+        <div  class="cart-img" (click)=" gotocart()">
+          <img style="margin-top: 2px;
+          width: 20px;
+          margin-right: 30px;" class="cart-img2" src="../../assets/icon/Cart.png">
+          <div style="left: -26px !important;top: 21px;" class="notification-span">
+            <span class="notification-number">5</span>
+           </div>
         </div>
       </ion-col>
 

@@ -1,13 +1,16 @@
 <ion-content [fullscreen]="true">
   <div class="first-div-header">
     <div class="second-div-header" (click)="gotocart()">
-      <img src="../../assets/icon/Cart-1.png">
-      <ion-badge id="notifications-badge" color="danger">6</ion-badge>
-
+      <img src="../../assets/icon/Cart-1.png"> 
+      <div class="cart-span">
+        <span class="notification-number">5</span>
+       </div>
     </div>
     <div id="notification-button" class="notification-header" (click)="gotonotification()">
       <img src="../../assets/icon/notifications.png">
-      <ion-badge id="notifications-badge" color="danger">6</ion-badge>
+      <div class="notification-span">
+        <span class="notification-number">5</span>
+       </div>
     </div>
   </div>
 

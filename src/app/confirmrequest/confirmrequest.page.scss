@@ -73,20 +73,18 @@ ion-content{
     margin-right: auto;
 }
 
-#notification-button {            
-    position: relative;
-    width: 50px;
-    top: 1px;
-    right: 1px;
-    overflow: visible !important;
-  }
-
-
-#notifications-badge {
-    background-color: red;
-    position: absolute;
-    top: 25px;
-    right: -3px;
+.notification-span
+{    background-color: red;
     border-radius: 50%;
-    margin-right: 30px;
+    text-align: center;
+    width: 18px;
+    position: absolute;
+    left: 4px;
+    top: 30px;
+}
+
+.notification-number{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
 }
